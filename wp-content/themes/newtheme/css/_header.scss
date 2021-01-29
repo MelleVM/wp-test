@@ -1,0 +1,42 @@
+header {
+    width: 100%;
+    background-color: transparent;
+    padding: 25px 0;
+    background-color: white;
+    box-shadow: 0 0 100px rgba(0, 0, 0, .15);
+
+    ul.navigation {
+        li.menu-item {
+            margin-right: 20px;
+            margin-left: 20px;
+            border-bottom: 3px solid transparent;
+
+            &:first-child {
+                margin-left: 20px;
+                margin-right: 0;
+            }
+
+            &:last-child {
+                margin-right: 20px;
+                margin-left: 0;
+            }
+
+            a {
+                font-weight: 400;
+            }
+
+            &.current_page_item {
+                a {
+                    color: $blue;
+                    font-weight: 600;
+                }
+            }
+
+            &:hover {
+                border-bottom: 3px solid $pink;
+                border-radius: 4px;
+                transition: 0.15s all;
+            }
+        }
+    }
+}

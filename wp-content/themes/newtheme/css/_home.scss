@@ -1,0 +1,50 @@
+.home-section-1 {
+    // background-image: url('http://localhost/wordpress/wp-content/uploads/2021/01/deluxe_bg.png');
+    height: 600px;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: repeat;
+
+    .container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        h1.title {
+            font-size: 50px;
+            color: white;
+        }
+
+        h2.subtitle {
+            color: $pink;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.home-section-2 {
+    padding: 50px 0;
+
+    h2:not(:first-child) {
+        margin-top: 15px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto 40%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.home-section-3 {
+    padding: 50px 0;
+    background-color: $lightgray;
+}
+
+.home-section-4 {
+    padding: 50px 0;
+
+}
