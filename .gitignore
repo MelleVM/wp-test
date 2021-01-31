@@ -13,3 +13,5 @@ wp-content/plugins/*
 !wp-content/themes
 wp-content/themes/*
 !wp-content/themes/newtheme
+
+!wp-content/uploads
