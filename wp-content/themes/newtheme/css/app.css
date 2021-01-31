@@ -92,19 +92,16 @@ header {
 }
 
 header ul.navigation li.menu-item {
-  margin-right: 20px;
   margin-left: 20px;
   border-bottom: 3px solid transparent;
 }
 
 header ul.navigation li.menu-item:first-child {
   margin-left: 20px;
-  margin-right: 0;
 }
 
 header ul.navigation li.menu-item:last-child {
   margin-right: 20px;
-  margin-left: 0;
 }
 
 header ul.navigation li.menu-item a {
@@ -178,13 +175,29 @@ header ul.navigation li.menu-item:hover {
   padding: 50px 0;
 }
 
+@media only screen and (max-width: 1100px) {
+  .home-section-1 {
+    height: 350px;
+    text-align: center;
+  }
+  .home-section-1 .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home-section-2 .grid {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
 .contact-container-2 {
   padding: 50px 0;
   height: 500px;
   background-color: #f2f2f2;
 }
 
-.posts-container .posts-title {
+.projects-container .projects-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,11 +211,11 @@ header ul.navigation li.menu-item:hover {
   margin-bottom: 40px;
 }
 
-.posts-container .posts-title h3 {
+.projects-container .projects-title h3 {
   color: #8591a0;
 }
 
-.posts-container .posts {
+.projects-container .projects {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: calc(50% - 10px) calc(50% - 10px);
@@ -211,7 +224,7 @@ header ul.navigation li.menu-item:hover {
   margin-top: 20px;
 }
 
-.posts-container .posts .post {
+.projects-container .projects .project {
   background-color: white;
   z-index: 2;
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
@@ -228,11 +241,11 @@ header ul.navigation li.menu-item:hover {
   padding: 7px;
 }
 
-.posts-container .posts .post img {
+.projects-container .projects .project img {
   height: 220px;
 }
 
-.posts-container .more-posts {
+.projects-container .more-projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,14 +260,14 @@ header ul.navigation li.menu-item:hover {
 }
 
 @media only screen and (max-width: 1100px) {
-  .posts-container .posts {
+  .projects-container .projects {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
-  .posts-container .posts .post {
+  .projects-container .projects .project {
     padding: 15px;
   }
-  .posts-container .posts .post img {
+  .projects-container .projects .project img {
     height: 150px;
   }
 }
@@ -292,7 +305,6 @@ header ul.navigation li.menu-item:hover {
 }
 
 .features-container .features .feature {
-  text-align: center;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33.3333333333%;
           flex: 0 0 33.3333333333%;
